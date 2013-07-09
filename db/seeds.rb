@@ -6,7 +6,7 @@
 # encoding: utf-8
 Product.delete_all
 Product.create(title: 'Vinca', 
-  #latin_name: 'Vinca major', 
+  latin_name: 'Vinca major', 
   description: 
     %{<p>
         An intensely purple five-petalled flower with glossy green leaves
@@ -16,7 +16,7 @@ Product.create(title: 'Vinca',
   price: 7.99)
 # . . .
 Product.create(title: 'Poppy', 
-  #latin_name: 'Papaver Rhoes', 
+  latin_name: 'Papaver Rhoes', 
   description:
     %{<p>
         A jubilantly red flower with four delicate papery petals, 
@@ -27,7 +27,7 @@ Product.create(title: 'Poppy',
 # . . .
 
 Product.create(title: 'Ginestra (Broom)', 
-#latin_name: 'Genista monspessulana', 
+  latin_name: 'Genista monspessulana', 
   description: 
     %{<p>
         A woody perennial shrub with vibrant yellow pea-family
