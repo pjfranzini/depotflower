@@ -5,29 +5,32 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create(title: 'Vinca',
+Product.create(title: 'Vinca', 
+  #latin_name: 'Vinca major', 
   description: 
     %{<p>
-        <em>Vinca major</em>, An intensely purple five-petalled flower with glossy green leaves
+        An intensely purple five-petalled flower with glossy green leaves
         generally used as a flowering ground-cover.
       </p>},
   image_url:   'vinca.jpg',    
   price: 7.99)
 # . . .
-Product.create(title: 'Poppy',
+Product.create(title: 'Poppy', 
+  #latin_name: 'Papaver Rhoes', 
   description:
     %{<p>
-        <em>Papaver Rhoes</em>, A jubilantly red flower with four delicate papery petals, 
+        A jubilantly red flower with four delicate papery petals, 
         sometimes used as a symbol of fallen soldiers.
       </p>},
   image_url: 'poppy.jpg',
   price: 5.99)
 # . . .
 
-Product.create(title: 'Ginestra (Broom)',
+Product.create(title: 'Ginestra (Broom)', 
+#latin_name: 'Genista monspessulana', 
   description: 
     %{<p>
-        <em>Genista monspessulana</em>, A woody perennial shrub with vibrant yellow pea-family
+        A woody perennial shrub with vibrant yellow pea-family
         flowers, that produces seed pods resembly hairy snow pea pods.
       </p>},
   image_url: 'broom.jpg',
