@@ -3,106 +3,107 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* START_HIGHLIGHT */
-.products {
-  header, section, hgroup, canvas {
-   -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-  }
-  h1, .list_description dt, .latin{
-    color:        #512;
-  }
-  #banner {
-    margin: -35px 10px 10px 10px;  padding: 25px 25px 20px 25px;
-    height: 45px;
-    background-color: #ccd; 
-    background: url(ferns.jpg) no-repeat;
-  }
-  hgroup {
-    margin: -5px auto -5px auto;
-    padding:0px;
-    border: 1px solid #999;
+// COMMENTED OUT ALL MY CSS to redo with bootstrap
+// .products {
+//   header, section, hgroup, canvas {
+//    -webkit-border-radius: 5px;
+//     -moz-border-radius: 5px;
+//     border-radius: 5px;
+//   }
+//   h1, .list_description dt, .latin{
+//     color:        #512;
+//   }
+//   #banner {
+//     margin: -35px 10px 10px 10px;  padding: 25px 25px 20px 25px;
+//     height: 45px;
+//     background-color: #ccd; 
+//     background: url(ferns.jpg) no-repeat;
+//   }
+//   hgroup {
+//     margin: -5px auto -5px auto;
+//     padding:0px;
+//     border: 1px solid #999;
 
-    background-color: RGBA(200,200,200,.8);
+//     background-color: RGBA(200,200,200,.8);
 
-    -webkit-box-shadow:  3px 3px 6px #242;
-    -moz-box-shadow:  3px 3px 6px #242;
-    box-shadow: 3px 3px 6px #242;
-    }
-  table {
-    margin: auto;
-    border-collapse: collapse;
-    border: 1px solid #999;
-    -webkit-box-shadow:  2px 2px 4px #564;
-    -moz-box-shadow:  2px 2px 4px #564;
-    box-shadow: 2px 2px 4px #564;
+//     -webkit-box-shadow:  3px 3px 6px #242;
+//     -moz-box-shadow:  3px 3px 6px #242;
+//     box-shadow: 3px 3px 6px #242;
+//     }
+  // table {
+  //   margin: auto;
+  //   border-collapse: collapse;
+  //   border: 1px solid #999;
+  //   -webkit-box-shadow:  2px 2px 4px #564;
+  //   -moz-box-shadow:  2px 2px 4px #564;
+  //   box-shadow: 2px 2px 4px #564;
 
-  }
+  // }
 
-  h1{
-    text-align: center;
-    text-shadow: 1px 1px 2px #EFE;
-  }
+  // h1{
+  //   text-align: center;
+  //   text-shadow: 1px 1px 2px #EFE;
+  // }
 
-  table tr {
-        -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    border-radius: 14px;
-  }
+  // table tr {
+  //       -webkit-border-radius: 14px;
+  //   -moz-border-radius: 14px;
+  //   border-radius: 14px;
+  // }
 
-  table tr td {
-    padding: 5px;
-    vertical-align: top;
-  }
+  // table tr td {
+  //   padding: 5px;
+  //   vertical-align: top;
+  // }
 
-  .list_image {
-    width:  150px;
-    height: 150px;
-    -webkit-box-shadow:  3px 3px 6px #333;
-    -moz-box-shadow:  3px 3px 6px #333;
-    box-shadow: 3px 3px 6px #333;
-    border: 6px solid #fff;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
+  // .list_image {
+  //   width:  150px;
+  //   height: 150px;
+  //   -webkit-box-shadow:  3px 3px 6px #333;
+  //   -moz-box-shadow:  3px 3px 6px #333;
+  //   box-shadow: 3px 3px 6px #333;
+  //   border: 6px solid #fff;
+  //   -webkit-border-radius: 3px;
+  //   -moz-border-radius: 3px;
+  //   border-radius: 3px;
+  // }
 
-  .list_description {
-    padding-top: 1em;
-    width: 60%;
+  // .list_description {
+  //   padding-top: 1em;
+  //   width: 60%;
 
-    dl {
-      margin: 0;
-    }
+  //   dl {
+  //     margin: 0;
+  //   }
 
-    dt {
-      font-weight:  bold;
-      font-size:    larger;
-    }
+  //   dt {
+  //     font-weight:  bold;
+  //     font-size:    larger;
+  //   }
 
-    dd {
-      margin: 0;
-    }
-  }
+  //   dd {
+  //     margin: 0;
+  //   }
+  // }
 
-  .list_actions {
-    font-size:    x-small;
-    text-align:   right;
-    padding-left: 1em;
-  }
+  // .list_actions {
+  //   font-size:    x-small;
+  //   text-align:   right;
+  //   padding-left: 1em;
+  // }
 
-  .list_line_even {
-    background:   #f3f1ee;
-  }
+  // .list_line_even {
+  //   background:   #f3f1ee;
+  // }
 
-  .list_line_odd {
-    background:   #e3e1dd;
-  }
+  // .list_line_odd {
+  //   background:   #e3e1dd;
+  // }
 
-  .latin{
-    font-style:italic;
-    font-weight:  bold;
+//   .latin{
+//     font-style:italic;
+//     font-weight:  bold;
 
-  }
-}
+//   }
+// }
 /* END_HIGHLIGHT */
