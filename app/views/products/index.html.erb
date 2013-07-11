@@ -20,16 +20,19 @@
         </td>
 
         <td>
-          <%= link_to 'Show', product, class: "btn btn-small" %><br/>
-          <%= link_to 'Edit', edit_product_path(product), class: "btn btn-small" %><br/>
-          <%= link_to 'Destroy', product, method: :delete,
+          <div class="displace">
+          <%= link_to raw('<i class="icon-search"></i> Show'), product, class: "btn btn-small" %><br/>
+          <%= link_to raw('<i class="icon-edit"></i> Edit'), edit_product_path(product), class: "btn btn-small" %><br/>
+          <%= link_to raw('<i class="icon-warning-sign"></i> Destroy'), product, method: :delete,
                       data: { confirm: 'Are you sure?' }, class: "btn btn-small btn-danger" %>
+          </div>
         </td>
       </tr>
     <% end %>
     </table>
 
     <br />
-
-    <%= link_to 'New product', new_product_path, class: "btn btn-primary"%>
+      <div class="text-right">
+      <%= link_to raw('<i class="icon-hand-right"></i> New product'), new_product_path, class: "btn btn-primary"%>
+      </div>
     </div>
