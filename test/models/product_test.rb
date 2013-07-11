@@ -23,6 +23,7 @@ class ProductTest < ActiveSupport::TestCase
   test "product price must be positive" do
     product = Product.new(title:       "My Book Title",
                           description: "yyy",
+                            latin_name: 'Papaver Rhoes',
                           image_url:   "zzz.jpg")
     product.price = -1
     assert product.invalid?
@@ -41,6 +42,7 @@ class ProductTest < ActiveSupport::TestCase
     Product.new(title:       "My Book Title",
                 description: "yyy",
                 price:       1,
+                latin_name: 'Papaver Rhoes',
                 image_url:   image_url)
   end
 
@@ -59,12 +61,24 @@ class ProductTest < ActiveSupport::TestCase
   end
   test "product is not valid without a unique title" do
     product = Product.new(title:       products(:ruby).title,
-                          description: "yyy", 
+                          description: "yyy",
+                            latin_name: 'Papaver Rhoes',
                           price:       1, 
                           image_url:   "fred.gif")
 
     assert product.invalid?
     assert_equal ["has already been taken"], product.errors[:title]
   end
-  
+  test "title must have a certain length" do
+    product = products(:poppy)
+    assert product.valid?
+    # assert product.invalid?
+    # assert_equal ["is too short (minimum is 10 characters)"], product.errors[:title]
+  end
+  #   test "latin_name must have a certain length" do
+  #   product = products(:poppy)
+
+  #   assert product.invalid?
+  #   assert_equal ["is too short (minimum is 10 characters)"], product.errors[:latin_name]
+  # end
 end
