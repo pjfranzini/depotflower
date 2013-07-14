@@ -31,7 +31,7 @@ Product.create(title: 'Ginestra (Broom)',
   description: 
     %{<p>
         A woody perennial shrub with vibrant yellow pea-family
-        flowers, that produces seed pods resembly hairy snow pea pods.
+        flowers, that produces seed pods resembling hairy snow pea pods.
       </p>},
   image_url: 'broom.jpg',
   price: 9.99)
