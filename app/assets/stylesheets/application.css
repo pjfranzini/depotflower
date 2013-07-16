@@ -25,4 +25,4 @@
          -moz-box-shadow:  2px 2px 4px #555;
 		 box-shadow: 2px 2px 4px #555;
 		}
-.navbar-inner {background-color: #555; }
+.navbar-inverse .navbar-inner {background-image: linear-gradient(to bottom, #1162B1, #025);}

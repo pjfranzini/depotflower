@@ -5,19 +5,23 @@
 <div class="hero-unit">
   <h1>Flower Catalog</h1>
 </div>
-<% @products.each do |product| %>
-	<div class="row">
-	  <div class="span3">
-	    <%= image_tag(product.image_url) %>
-	  </div>
-	  <div class="span9">
-	    <h3><%= product.title %></h3>
-	    <%= sanitize(product.description) %>
-	    <div>
-	      <span class="price"><%= product.price %></span>
-	    </div>
-	  </div>
-	</div>
-	<br>
+<% cache ['store', Product.latest] do %>
+	<% @products.each do |product| %>
+	  <% cache ['entry', product] do %>
+		<div class="row">
+		  <div class="span3">
+		    <%= image_tag(product.image_url) %>
+		  </div>
+		  <div class="span9">
+		    <h3><%= product.title %></h3>
+		    <%= sanitize(product.description) %>
+		    <div>
+		      <span class="price"><%= number_to_currency(product.price) %></span>
+		    </div>
+		  </div>
+		</div>
+		<br>
+	<% end %>
+  <% end %>
 <% end %>
 </div>
