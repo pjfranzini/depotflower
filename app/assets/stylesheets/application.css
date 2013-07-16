@@ -17,6 +17,7 @@
          -moz-box-shadow:  2px 2px 2px #555;
 		 box-shadow: 2px 2px 2px #555;
 }
+.btn-nomarg{margin: 0px;}
 .displace{margin-top: 14px;}
 .hero-unit{padding-top: 20px; padding-bottom: 25px;}
 .hero-unit h1 {font-size:50px; text-shadow: 2px 2px 4px #777;}
@@ -26,3 +27,9 @@
 		 box-shadow: 2px 2px 4px #555;
 		}
 .navbar-inverse .navbar-inner {background-image: linear-gradient(to bottom, #1162B1, #025);}
+#notice { color: #000;
+          border: 2px solid red;
+          padding: 1em;
+          margin-bottom: 2em;
+          background-color: #f0f0f0;
+          font: bold smaller sans-serif;}
