@@ -3,22 +3,24 @@
 <% end %>
 <div class="hero-unit">
   <h1>Flower Catalog</h1>
+  <% if @session_counter > 5 %> 
   <p><%= pluralize(@session_counter, "access") %></p>
+  <% end %>
 </div>
 <% cache ['store', Product.latest] do %>
 	<% @products.each do |product| %>
 	  <% cache ['entry', product] do %>
 		<div class="row">
-		  <div class="span3">
-		    <%= link_to(image_tag(product.image_url), line_items_path(product_id: product),:method => :post) %>
+		  <div class="span2">
+		    <%= link_to(image_tag(product.image_url, class: 'img-rounded img-polaroid'), line_items_path(product_id: product),:method => :post) %>
 		  </div>
-		  <div class="span9">
+		  <div class="span7 test">
 		    <h3><%= product.title %></h3>
 		    <%= sanitize(product.description) %>
 		    <div>
-		      <span class="span1" class="price"><%= number_to_currency(product.price) %></span>
+		      <span class="span1 price"><%= number_to_currency(product.price) %></span>
 		      <div class = "span1">
-		        <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn btn-small btn-nomarg" %>
+		        <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn btn-small btn-nomarg", remote: true %>
               </div>
 		    </div>
 		  </div>
