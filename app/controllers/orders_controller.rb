@@ -32,7 +32,7 @@ class OrdersController < ApplicationController
   # POST /orders.json
 
   def create
- @order = Order.new(order_params)
+    @order = Order.new(order_params)
     @order.add_line_items_from_cart(@cart)
 
     respond_to do |format|
@@ -40,12 +40,13 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         format.html { redirect_to store_url, notice:
-         'Thank you for your order.' }
-
-        format.json { render action: 'show', status: :created, location: @order }
+          'Thank you for your order.' }
+        format.json { render action: 'show', status: :created,
+          location: @order }
       else
         format.html { render action: 'new' }
-        format.json { render json: @order.errors, status: :unprocessable_entity }
+        format.json { render json: @order.errors,
+          status: :unprocessable_entity }
       end
     end
   end
@@ -84,4 +85,5 @@ class OrdersController < ApplicationController
     def order_params
       params.require(:order).permit(:name, :address, :email, :pay_type)
     end
+  #...
 end
